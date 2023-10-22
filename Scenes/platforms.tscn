@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://boruhl3tjqrw8"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_jtxvu"]
+size = Vector2(900, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i5oe1"]
+size = Vector2(834.334, 100)
+
+[node name="Platforms" type="StaticBody2D"]
+visible = false
+position = Vector2(-343, -269)
+scale = Vector2(0.3, 0.3)
+
+[node name="PlatformStaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(493.333, 493.333)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformStaticBody2D"]
+position = Vector2(-35, 0)
+scale = Vector2(0.922222, 1)
+mesh = SubResource("QuadMesh_jtxvu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformStaticBody2D"]
+modulate = Color(0.211765, 0.301961, 0.329412, 1)
+position = Vector2(-33.8331, 0)
+shape = SubResource("RectangleShape2D_i5oe1")
+
+[node name="PlatformStaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-205, 238)
+scale = Vector2(0.6, 1)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformStaticBody2D2"]
+position = Vector2(-35, 0)
+scale = Vector2(0.922222, 1)
+mesh = SubResource("QuadMesh_jtxvu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformStaticBody2D2"]
+modulate = Color(0.211765, 0.301961, 0.329412, 1)
+position = Vector2(-36, 0)
+shape = SubResource("RectangleShape2D_i5oe1")
+
+[node name="PlatformStaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(-874, 104)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformStaticBody2D3"]
+position = Vector2(-35, 0)
+scale = Vector2(0.922222, 1)
+mesh = SubResource("QuadMesh_jtxvu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformStaticBody2D3"]
+modulate = Color(0.211765, 0.301961, 0.329412, 1)
+position = Vector2(-36, 0)
+shape = SubResource("RectangleShape2D_i5oe1")
